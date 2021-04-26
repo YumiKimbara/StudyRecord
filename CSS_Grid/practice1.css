@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template:
+    "one ... two ... three" 1fr
+    "... ... ... ... ..." 1fr
+    "four ... ... ... ..." 1fr
+    / 1fr 20px 1fr 20px 1fr;
+}
+
+.one {
+  grid-area: one;
+  background-color: aqua;
+}
+
+.two {
+  grid-area: two;
+  background-color: aqua;
+}
+
+.three {
+  grid-area: three;
+  background-color: aqua;
+}
+
+.four {
+  grid-area: four;
+  background-color: aqua;
+}

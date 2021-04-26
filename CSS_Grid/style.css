@@ -1,0 +1,58 @@
+body {
+  font-size: 2rem;
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template:
+    "... ...... ...... ...... ...... ...... ..." 30px
+    "... header header header header header ..." 1fr
+    "... ...... ...... ...... ...... ...... ..." 10px
+    "... left   ...... center ...... right  ..." 3fr
+    "... ...... ...... ...... ...... ...... ..." 10px
+    "... footer footer footer footer footer ..." 1fr
+    "... ...... ...... ...... ...... ...... ..." 30px
+    / auto 1fr 20px 5fr 10px 1fr auto;
+  /* grid-template:
+    "header header header" 1fr
+    "left center right" 3fr
+    "footer footer footer" 1fr
+    / 1fr 5fr 1fr; */
+  /* gap: 10px; */
+}
+
+header {
+  background-color: aquamarine;
+  grid-area: header;
+}
+
+main {
+  background-color: salmon;
+  grid-area: center;
+}
+
+nav {
+  background-color: sandybrown;
+  grid-area: left;
+}
+
+aside {
+  background-color: seagreen;
+  grid-area: right;
+}
+
+footer {
+  background-color: cornflowerblue;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template:
+      "header" 150px
+      "center" 1fr
+      "left"
+      "right"
+      "footer" 300px;
+  }
+}

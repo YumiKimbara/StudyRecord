@@ -14,6 +14,31 @@
 - ### What is HTTP?
   4. **HTTPリクエストとHTTPレスポンスとは何ですか？**
      - 回答: HTTPリクエストとはWebブラウザなどのクライアント側がブラウザにURLを打ち込むこと、リンクをクリックすること、入力フォームを入力し送信すること、などによって、Webサーバーへ該当のHTMLを要求すること。HTTPレスポンスとはそれに応答し該当のHTMLをクライアント側へ渡すこと。
+  #### HTTPリクエスト例:
+  ```
+  GET http://127.0.0.1/testform.php?text1=a&text2=b HTTP/1.1  
+  Host: 127.0.0.1  
+  Connection: keep-alive  
+  Upgrade-Insecure-Requests: 1
+  User-Agent: Mozilla/5.0(Windows NT 10.0; Win64; x64)Ch  
+  Accept:text/html,application/xhtml+xml,application/xml;q=o.  
+  Refer: http//127.0.0.1/
+  Accept-Encoding: gzip, defer, br  
+  Accept-Language: ja,en-US;q=0.9,en;q=0.8
+  ```
+  #### HTTPレスポンス例:
+  ```
+  HTTP/1.1 200 OK
+  Date: Sun, 29 Apr 2018 05:01:18 GMT  
+  Server: Apache/2.4.34(Win32)OpenSSL/1.1.0h PHP/7.28  
+  X-Powered-By: PHP/7.2.8  
+  Connect-Length: 163  
+  Keep-Alive: timeout=5, max=100  
+  Connection: Keep-Alive  
+  Content-Type: text/html; charset=UTF-8
+  ```
+
+
 
   5. **HTTPステータスコードとは何ですか？何のために使われますか？**
      - 回答: ウェブブラウザから送られるリクエストに対し、ウェブサーバーから返信されるレスポンス内容を表す3桁の数字のこと。リクエストが成功したのか(200番台)、失敗したのか(400番台)などを判断するために使われる。

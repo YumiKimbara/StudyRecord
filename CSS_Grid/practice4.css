@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1f 1f 1f;
+  grid-template-rows: 1f 1f;
+}
+
+.card {
+  width: 25%;
+  margin: 10px;
+}
+
+li {
+  background-color: aqua;
+  margin: 5px;
+}
+
+.a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.c {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.d {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.e {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.f {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.g {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.h {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.i {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.j {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.k {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.l {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.m {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.n {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.o {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.p {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.q {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.r {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
